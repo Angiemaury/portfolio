@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Angie Maury - Visual Artist</title>
+  <style>
+    body {
+      font-family: 'Raleway', sans-serif;
+      font-size: 17px;
+      margin: 0;
+      padding: 20px;
+      background: #FFFFFF;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .gallery {
+      column-count: 3;
+      column-gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      margin-bottom: 40px;
+      border-radius: 0px;
+      display: block;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.02);
+    }
+
+    #lightbox {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    #lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+
+    section {
+      max-width: 800px;
+      margin: auto;
+      margin-bottom: 60px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #777;
+      padding-top: 40 px;
+    }
+
+    @media (max-width: 768px) {
+      .gallery {
+        column-count: 1;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>
+  <img src="images/signature.png" alt="Angie Maury Signature" style="height: 300px;" />
+</h1>
+
+    <nav>
+      <ul>
+        <li><a href="#gallery">STORIES</a></li>
+        <li><a href="#about">BIO</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="Gallery">
+    <h2>STORIES</h2>
+    <div class="gallery">
+<img src="images/work1.jpg" alt="Work 1" />
+<img src="images/work2.jpg" alt="Work 2" />
+<img src="images/work3.jpg" alt="Work 3" />
+<img src="images/work4.jpg" alt="Work 4" />
+<img src="images/work5.jpg" alt="Work 5" />
+<img src="images/work6.jpg" alt="Work 6" />
+<img src="images/work7.jpg" alt="Work 7" />
+<img src="images/work8.jpg" alt="Work 8" />
+<img src="images/work9.jpg" alt="Work 9" />
+<img src="images/work10.jpg" alt="Work10" />
+<img src="images/work11.jpg" alt="Work 11" />
+<img src="images/work12.jpg" alt="Work 12" />
+<img src="images/work13.jpg" alt="Work 13" />
+<img src="images/work14.jpg" alt="Work 14" />
+<img src="images/work15.jpg" alt="Work 15" />
+<img src="images/work16.jpg" alt="Work 16" />
+<img src="images/work17.jpg" alt="Work 17" />
+<img src="images/work18.jpg" alt="Work 18" />
+<img src="images/work19.jpg" alt="Work 19" />
+<img src="images/work20.jpg" alt="Work 20" />
+<img src="images/work21.jpg" alt="Work 21" />
+<img src="images/work22.jpg" alt="Work 22" />
+<img src="images/work23.jpg" alt="Work 23" />
+<img src="images/work24.jpg" alt="Work 24" />
+<img src="images/work25.jpg" alt="Work 25" />
+<img src="images/work26.jpg" alt="Work 26" />
+<img src="images/work27.jpg" alt="Work 27" />
+<img src="images/work28.jpg" alt="Work 28" />
+<img src="images/work29.jpg" alt="Work 29" />
+<img src="images/work30.jpg" alt="Work 30" />
+<img src="images/work31.jpg" alt="Work 31" />
+<img src="images/work32.jpg" alt="Work 32" />
+<img src="images/work33.jpg" alt="Work 33" />
+<img src="images/work34.jpg" alt="Work 34" />
+<img src="images/work35.jpg" alt="Work 35" />
+<img src="images/work36.jpg" alt="Work 36" />
+<img src="images/work37.jpg" alt="Work 37" />
+<img src="images/work38.jpg" alt="Work 38" />
+<img src="images/work39.jpg" alt="Work 39" />
+<img src="images/work40.jpg" alt="Work 40" />
+<img src="images/work41.jpg" alt="Work 41" />
+<img src="images/work42.jpg" alt="Work 42" />
+<img src="images/work43.jpg" alt="Work 43" />
+<img src="images/work44.jpg" alt="Work 44" />
+<img src="images/work45.jpg" alt="Work 45" />
+<img src="images/work46.jpg" alt="Work 46" />
+<img src="images/work47.jpg" alt="Work 47" />
+<img src="images/work48.jpg" alt="Work 48" />
+<img src="images/work49.jpg" alt="Work 49" />
+<img src="images/work50.jpg" alt="Work 50" />
+<img src="images/work51.jpg" alt="Work 51" />
+<img src="images/work52.jpg" alt="Work 52" />
+<img src="images/work53.jpg" alt="Work 53" />
+<img src="images/work54.jpg" alt="Work 54" />
+<img src="images/work55.jpg" alt="Work 55" />
+<img src="images/work56.jpg" alt="Work 56" />
+<img src="images/work57.jpg" alt="Work 57" />
+<img src="images/work58.jpg" alt="Work 58" />
+<img src="images/work59.jpg" alt="Work 59" />
+<img src="images/work60.jpg" alt="Work 60" />
+<img src="images/work61.jpg" alt="Work 61" />
+<img src="images/work62.jpg" alt="Work 62" />
+<img src="images/work63.jpg" alt="Work 63" />
+<img src="images/work64.jpg" alt="Work 64" />
+<img src="images/work65.jpg" alt="Work 65" />
+<img src="images/work66.jpg" alt="Work 66" />
+<img src="images/work67.jpg" alt="Work 67" />
+<img src="images/work68.jpg" alt="Work 68" />
+<img src="images/work69.jpg" alt="Work 69" />
+<img src="images/work70.jpg" alt="Work 70" />
+
+
+   </div>
+  </section>
+
+  <section id="about">
+    <h2>ABOUT ME</h2>
+  
+
+<p>Hey, I’m Angie Maury — a travel photographer, street art lover, and visual artist from Barranquilla, Colombia ,currently based in Europe.</p>
+<p>Photography, for me, is about capturing the magic in the everyday — vibrant colors, raw moments, quiet streets,</p> 
+<p>and the little details that often go unseen.</p>
+<p>I’m also passionate about documenting special events, from weddings to cultural gatherings, </p>
+<p>and creating imagery for advertising and commercial projects that tells a story and connects with people.</p>
+<p>I’m drawn to the beauty that lives outside the frame — the walls with stories, the energy of a city, the feeling of just being there.</p> 
+<p>This space is a reflection of how I see the world. </p> 
+<p>Every photo has a heartbeat, a mood, a reason it made me stop and click.</p> 
+<p>Take your time, explore the gallery, and if something sparks your interest — let’s connect.</p> 
+ <p>I’d love to hear from you and discuss how we can create something memorable together.</p> 
+  </section>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - Angie Maury</title>
+
+  <!-- Font Awesome para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Raleway', sans-serif;
+      background: #fff;
+      color: #111;
+      margin: 0;
+      padding: 0;
+    }
+
+    #contact {
+      max-width: 400px;
+      margin: 50px auto;
+      text-align: central;
+    }
+
+    #contact h2 {
+      text-align: central;
+      font-weight: normal;
+      margin-bottom: 30px;
+      font-size: 20px;
+    }
+
+    .contact-item {
+      font-size: 18px;
+      margin: 15px 0;
+    }
+
+    .contact-item i {
+      margin-right: px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #111; /* negro */
+      transition: opacity 0.2s;
+    }
+
+    a:hover {
+      opacity: 0.6; /* hover sutil */
+    }
+  </style>
+</head>
+<body>
+
+  <section id="CONTACT">
+    <h2>CONTACT</h2>
+
+    <div class="contact-item">
+      <i class="fas fa-envelope"></i>
+      <a href="mailto:angiemaury9@gmail.com">angiemaury9@gmail.com</a>
+    </div>
+
+    <div class="contact-item">
+      <i class="fab fa-whatsapp"></i>
+      <a href="https://wa.me/393508418577" target="_blank">+39 350 841 8577</a>
+    </div>
+
+    <div class="contact-item">
+      <i class="fab fa-instagram"></i>
+      <a href="https://instagram.com/angiemaury" target="_blank">@angiemaury</a>
+    </div>
+  </section>
+
+
+
+  
+  
+
+  <footer>
+    &copy; 2026 Angie Maury
+<footer>
+  <p>&copy; 2026 Angie Maury — <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+
+  </footer>
+
+  <div id="lightbox">
+    <img id="lightbox-img" src="" alt="Full View" />
+  </div>
+
+  <script>
+    const images = document.querySelectorAll('.gallery img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightbox.style.display = 'flex';
+      });
+    });
+
+    lightbox.addEventListener('click', () => {
+      lightbox.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
